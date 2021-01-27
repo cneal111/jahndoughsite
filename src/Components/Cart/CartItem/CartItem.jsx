@@ -21,7 +21,7 @@ const CartItem = ({ item, onUpdateCartQty, onRemoveFromCart }) => {
       <CardActions className={classes.cardActions}>
         <div className={classes.buttons}>
           <Button type="button" size="small" onClick={() => handleUpdateCartQty(item.id, item.quantity - 1)}>-</Button>
-          <Typography style={{backgroundColor:'black', opacity:'50%'}}>&nbsp;{item.quantity}&nbsp;</Typography>
+          <Typography color="inherit"style={{backgroundColor:'white', opacity:'100%'}}>&nbsp;{item.quantity}&nbsp;</Typography>
           <Button type="button" size="small" onClick={() => handleUpdateCartQty(item.id, item.quantity + 1)}>+</Button>
         </div>
         <Button variant="contained" type="button" color="secondary" onClick={() => handleRemoveFromCart(item.id)}>Remove</Button>
