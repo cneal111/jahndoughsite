@@ -34,7 +34,7 @@ const Product = ({ product, onAddToCart }) => {
 
                 </div>
                 
-                <Typography dangerouslySetInnerHTML={{__html: product.description}}  variant='body2' style={{backgroundColor:'black', opacity:'25%'}}/>
+                <Typography dangerouslySetInnerHTML={{__html: product.description}}  variant='body2' color='inherit' style={{backgroundColor:'white', opacity:'100%'}}/>
                    
             </CardContent>
 
