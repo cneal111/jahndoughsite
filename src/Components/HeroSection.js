@@ -21,7 +21,10 @@ function HeroSection() {
         <> 
         <div className='hero-container'>
             {/* <video src='/videos/HomePageVid.mp4' autoPlay loop muted/> */}
-            <img src={"./images/HomePageVid.gif"}  alt='homepage-pic'/>
+            <div className='text-container'>
+                <img src={"./images/HomePageVid.gif"}  alt='homepage-pic'/>
+            </div>
+            
             
             
 
