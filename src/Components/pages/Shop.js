@@ -54,11 +54,11 @@ const Shop = () => {
                     <Route exact path="/shop">
                       {/* <Products products={products} onAddToCart={handleAddToCart}/> */}
 
+                      {/* Shop Coming Soon msg for changes to be made while site during production */}
                       <Typography variant="h1" color="textSecondary"style={{backgroundColor:'white', opacity:'100%'}} >
-                        <br/> <br/> <br/> <br/> 
-          
+                        <br/> <br/>
                         Coming Soon!
-                        <br/> <br/> <br/>
+                        <br/> <br/> <br/> <br/>
                       </Typography>
                     
                     </Route>
