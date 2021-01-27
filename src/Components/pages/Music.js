@@ -48,9 +48,9 @@ class Projs {
                                 'https://open.spotify.com/album/0pezKfavVvld1kYWVnY9Ry',
                                 'https://tidal.com/browse/album/128230142')
     
-    var thirdProj = new Projs('https://music.apple.com/us/album/my-afro-is-my-halo/1330780232',
-                            'https://open.spotify.com/album/3ZG4WexgJnayvHHtdtRgVT',
-                            'https://tidal.com/browse/album/82973216')
+    var thirdProj = new Projs('https://music.apple.com/us/album/calle-feliz-ep/1540305942',
+                            'https://open.spotify.com/album/1GwZ7DPJMwLBYwBR2zke2J',
+                            'https://tidal.com/browse/album/162114164')
 
 
 
@@ -202,13 +202,13 @@ function Music() {
 
                 <div className='text-container'>
                     <div class="projpic"> 
-                    <img src='/images/projectpic3.jpg' alt=" "/>
+                    <img src='/images/projectpic4.jpg' alt=" "/>
                     </div>
                 
                     
                     <div className='centered-box'>
                         <h1>
-                            My Afro Is My Halo
+                           Calle Feliz
                         </h1>
                         <br/>  <br/> <br/> <br/> <br/> <br/> <br/>
                         <div className='music-buttons'>
