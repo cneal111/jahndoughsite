@@ -5,11 +5,14 @@ import Products from './StoreComponents/Products/Products'
 import Cart from '../Cart/Cart';
 import { commerce } from '../../lib/commerce'
 import {BrowserRouter as Router, Switch,Route } from 'react-router-dom';
+import {Typography} from '@material-ui/core';
 
 
 
 
 const Shop = () => {
+
+{/* 
     
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState({});
@@ -40,7 +43,7 @@ const Shop = () => {
       }, []);
 
       console.log(products)
-    
+    */}
     return (
 
        <Router>
@@ -49,7 +52,15 @@ const Shop = () => {
                 <Switch>
 
                     <Route exact path="/shop">
-                    <Products products={products} onAddToCart={handleAddToCart}/>
+                      {/* <Products products={products} onAddToCart={handleAddToCart}/> */}
+
+                      <Typography variant="h1" color="textSecondary"style={{backgroundColor:'white', opacity:'100%'}} >
+                        <br/> <br/> <br/> <br/> 
+          
+                        Coming Soon!
+                        <br/> <br/> <br/>
+                      </Typography>
+                    
                     </Route>
                 
                    
