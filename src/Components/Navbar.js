@@ -86,7 +86,7 @@ const Navbar = ({totalItems}) => {
                         { (location.pathname === '/shop') && (
                         <li className="nav-item">
                        
-                        <IconButton component={Link} to="/cart" aria-label='Show cart items' color='inherit'>
+                        <IconButton component={Link} to="/cart" aria-label='Show cart items' color='inherit' onClick={closeMobileMenu}>
                             <Badge badgeContent={totalItems} color='secondary'>
                                 <ShoppingCart/>
                             </Badge>

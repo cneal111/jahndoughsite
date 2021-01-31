@@ -5,14 +5,14 @@ import Products from './StoreComponents/Products/Products'
 import Cart from '../Cart/Cart';
 import { commerce } from '../../lib/commerce'
 import {BrowserRouter as Router, Switch,Route } from 'react-router-dom';
-import {Typography} from '@material-ui/core';
+
 
 
 
 
 const Shop = () => {
 
-{/* 
+
     
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState({});
@@ -29,9 +29,10 @@ const Shop = () => {
         setCart(await commerce.cart.retrieve());
       };
 
-      const handleAddToCart = async (productId, quantity) => {
-        const { cart } = await commerce.cart.add(productId, quantity);
+      const handleAddToCart = async (productId,quantity,variant) => {
+        const { cart } = await commerce.cart.add(productId,quantity,variant);
     
+        
         setCart(cart);
       };
 
@@ -42,8 +43,9 @@ const Shop = () => {
 
       }, []);
 
-      console.log(products)
-    */}
+      
+      
+   
     return (
 
        <Router>
@@ -52,18 +54,18 @@ const Shop = () => {
                 <Switch>
 
                     <Route exact path="/shop">
-                      {/* <Products products={products} onAddToCart={handleAddToCart}/> */}
+                      <Products products={products} onAddToCart={handleAddToCart}/> 
 
-                      {/* Shop Coming Soon msg for changes to be made while site during production */}
+                      {/* 
+                      //Shop Coming Soon msg for changes to be made while site during production 
                       <Typography variant="h1" color="textSecondary"style={{backgroundColor:'white', opacity:'100%'}} >
                         <br/> <br/>
                         Coming Soon!
                         <br/> <br/> <br/> <br/>
                       </Typography>
-                    
+                     */}
+
                     </Route>
-                
-                   
 
                 </Switch>
                 
