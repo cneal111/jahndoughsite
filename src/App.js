@@ -62,7 +62,7 @@ const App = () => {
 
   const handleCaptureCheckout = async (checkoutTokenId, newOrder) => {
     try {
-      const incomingOrder = await commerce.checkout.capture(process.env.REACT_APP_CHEC_PUBLIC_KEY,checkoutTokenId, newOrder);
+      const incomingOrder = await commerce.checkout.capture(checkoutTokenId, newOrder);
 
       setOrder(incomingOrder);
 
