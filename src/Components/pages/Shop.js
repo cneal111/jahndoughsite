@@ -59,7 +59,7 @@ const Shop = () => {
 
                     
                       //Shop maintenance msg for changes to be made while site during production 
-                      <Typography variant="h1" color="textSecondary"style={{backgroundColor:'white', opacity:'100%'}} >
+                      <Typography variant="h3" color="textSecondary"style={{backgroundColor:'white', opacity:'100%'}} >
                         <br/> <br/>
                         Sorry, our shop is down for maintenance currently. <br/>
                         Please check back soon!
