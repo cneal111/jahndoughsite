@@ -2,6 +2,7 @@ import React  from 'react'
 import { useState, useEffect } from 'react';
 import '../../App.css';
 import Products from './StoreComponents/Products/Products'
+import {Typography} from '@material-ui/core'
 import Cart from '../Cart/Cart';
 import { commerce } from '../../lib/commerce'
 import {BrowserRouter as Router, Switch,Route } from 'react-router-dom';
