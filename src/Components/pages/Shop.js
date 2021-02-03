@@ -12,7 +12,7 @@ import {BrowserRouter as Router, Switch,Route } from 'react-router-dom';
 
 const Shop = () => {
 
-
+ {/* 
     
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState({});
@@ -43,7 +43,7 @@ const Shop = () => {
 
       }, []);
 
-      
+      */}
       
    
     return (
