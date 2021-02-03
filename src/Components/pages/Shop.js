@@ -54,16 +54,17 @@ const Shop = () => {
                 <Switch>
 
                     <Route exact path="/shop">
-                      <Products products={products} onAddToCart={handleAddToCart}/> 
+                     {/*   <Products products={products} onAddToCart={handleAddToCart}/> */}
 
-                      {/* 
-                      //Shop Coming Soon msg for changes to be made while site during production 
+                    
+                      //Shop maintenance msg for changes to be made while site during production 
                       <Typography variant="h1" color="textSecondary"style={{backgroundColor:'white', opacity:'100%'}} >
                         <br/> <br/>
-                        Coming Soon!
+                        Sorry, our shop is down for maintenance currently. <br/>
+                        Please check back soon!
                         <br/> <br/> <br/> <br/>
                       </Typography>
-                     */}
+                   
 
                     </Route>
 
