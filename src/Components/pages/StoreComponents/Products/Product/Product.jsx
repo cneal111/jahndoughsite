@@ -28,7 +28,10 @@ const Product = ({product, onAddToCart }) => {
       }
       else{
         onAddToCart(product.id,1,variant);
+<<<<<<< Updated upstream
         window.location.reload(true);
+=======
+>>>>>>> Stashed changes
       }
        
       }
@@ -38,10 +41,23 @@ const Product = ({product, onAddToCart }) => {
       
      function setSize(variantID, optionID,optQnty){
 
+<<<<<<< Updated upstream
           
           buttonHandle(variantID,optionID,optQnty);
+=======
+        
+        buttonHandle(variantID,optionID,optQnty);
+        
+      
+>>>>>>> Stashed changes
       }
 
+    
+    function triggerReload(){
+
+        window.location.reload(false);
+    }
+      
       
     
      
@@ -80,16 +96,24 @@ const Product = ({product, onAddToCart }) => {
                          
                            
                              { variant.options.map((option) => (
+<<<<<<< Updated upstream
                                
                               <MenuItem key={option.id} value={option.id} onClick={() => setSize(variant.id,option.id, option.quantity)} >
+=======
+
+                              <MenuItem key={option.id} value={option.id} onClick={() => setSize(variant.id,option.id,option.quantity)} >
+>>>>>>> Stashed changes
                                 {option.name}
                               </MenuItem>
                                  
                              ))
                             } 
                            
+<<<<<<< Updated upstream
                             
                            
+=======
+>>>>>>> Stashed changes
                        
                       </Select>
 
@@ -103,12 +127,15 @@ const Product = ({product, onAddToCart }) => {
 
             </CardContent>
 
-            <CardActions disableSpacing className={classes.cardActions}>
+            <CardActions disableSpacing className={classes.cardActions}  onClick={() => triggerReload()}>
                 <IconButton aria-label='Add to Cart' >
                     <AddShoppingCart/>
 
                 </IconButton>
             </CardActions>
+
+
+            
             </Card>
     )
 }
