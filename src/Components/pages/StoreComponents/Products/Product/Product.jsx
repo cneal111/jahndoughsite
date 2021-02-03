@@ -5,14 +5,13 @@ import useStyles from "./styles"
 
 
 
-
 const Product = ({product, onAddToCart }) => {
     const classes = useStyles();
 
     
   const [sizeSelection, setSizeSelection] = useState({});
 
-    function buttonHandle(variantID,optionID,sizeType) {
+    function buttonHandle(variantID,optionID,optQnty) {
         
         
         let variant = {
@@ -21,17 +20,26 @@ const Product = ({product, onAddToCart }) => {
         
         }
 
+       
+      
+       console.log(optQnty)
+      if(optQnty <= 0 ){
+          alert("We're sorry, this option is currently sold out.")
+      }
+      else{
         onAddToCart(product.id,1,variant);
-       window.location.reload(true);
+        window.location.reload(true);
+      }
+       
       }
       
     
 
       
-     function setSize(variantID, optionID,sizeType){
+     function setSize(variantID, optionID,optQnty){
 
           
-          buttonHandle(variantID,optionID,sizeType);
+          buttonHandle(variantID,optionID,optQnty);
       }
 
       
@@ -69,18 +77,20 @@ const Product = ({product, onAddToCart }) => {
                    <ul>
                      {product.variants.map((variant) => (
                       <Select value={sizeSelection} fullWidth onChange={(e) => setSizeSelection(e.target.value)}>
-                         <MenuItem key={variant.id} value={variant.id}>
+                         
                            
                              { variant.options.map((option) => (
                                
-                              <MenuItem key={option.id} value={option.id} onClick={() => setSize(variant.id,option.id, option.name)} >
+                              <MenuItem key={option.id} value={option.id} onClick={() => setSize(variant.id,option.id, option.quantity)} >
                                 {option.name}
                               </MenuItem>
-                             
+                                 
                              ))
-                            }
+                            } 
                            
-                        </MenuItem>
+                            
+                           
+                       
                       </Select>
 
                        
@@ -88,6 +98,8 @@ const Product = ({product, onAddToCart }) => {
                      ))}
                      
                    </ul>
+
+                   
 
             </CardContent>
 
