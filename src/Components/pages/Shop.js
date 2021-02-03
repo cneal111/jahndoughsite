@@ -13,7 +13,7 @@ import {BrowserRouter as Router, Switch,Route } from 'react-router-dom';
 
 const Shop = () => {
 
- {/* 
+
     
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState({});
@@ -44,7 +44,7 @@ const Shop = () => {
 
       }, []);
 
-      */}
+      
       
    
     return (
@@ -55,9 +55,9 @@ const Shop = () => {
                 <Switch>
 
                     <Route exact path="/shop">
-                     {/*   <Products products={products} onAddToCart={handleAddToCart}/> */}
+                      <Products products={products} onAddToCart={handleAddToCart}/> 
 
-                    
+                     {/* 
                       //Shop maintenance msg for changes to be made while site during production 
                       <Typography variant="h3" color="textSecondary"style={{backgroundColor:'white', opacity:'100%'}} >
                         <br/> <br/>
@@ -65,7 +65,7 @@ const Shop = () => {
                         Please check back soon!
                         <br/> <br/> <br/> <br/>
                       </Typography>
-                   
+                   */}
 
                     </Route>
 
